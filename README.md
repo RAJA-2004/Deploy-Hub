@@ -1,0 +1,86 @@
+<div align="center">
+  <br />
+  <h1>🚀 DEPLOY HUB</h1>
+  <p>
+    <em>A lightweight cloud deployment service that enables users to upload and host frontend websites <br /> 
+    using REST APIs, Dockerized builds and AWS infrastructure.</em>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=node.js&logoColor=white&color=339933" alt="Node.js" />
+    <img src="https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript&logoColor=white&color=3178C6" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/AWS%20S3-black?style=for-the-badge&logo=amazon-aws&logoColor=white&color=FF9900" alt="AWS S3" />
+    <img src="https://img.shields.io/badge/Docker-black?style=for-the-badge&logo=docker&logoColor=white&color=2496ED" alt="Docker" />
+    <img src="https://img.shields.io/badge/Postman-black?style=for-the-badge&logo=postman&logoColor=white&color=FF6C37" alt="Postman" />
+  </p>
+
+  <br />
+
+  <a href="https://deploy-hub.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Site-Deploy_Hub-28a745?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Site" />
+  </a>
+
+  <br /><br />
+
+  <a href="https://youtu.be/GdX-LqlLm1g" target="_blank">
+    <img src="https://github.com/RAJA-2004/Deploy-Hub/blob/master/static/Landing-Page.png" alt="DeployHub Demo Video Thumbnail" width="800" />
+  </a>
+
+  <p><em>Click the image above to watch the full demo video on YouTube 🎥</em></p>
+
+  <br />
+</div>
+
+---
+
+## ✨ What is Deploy Hub?
+
+DeployHub is a deployment service that:
+- Accepts frontend project uploads or repositories via RESTful APIs  
+- Uses a Docker-based build server to generate static builds  
+- Pushes them to AWS S3 for hosting  
+- Serves content via a custom reverse proxy mapped to subdomains  
+
+It simulates the core behaviors of a CI/CD deployment flow in a clean and modular way.
+
+---
+
+## Core Services Overview
+
+| Service              | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **api-server**        | Receives file uploads or repo info, triggers ECS task for building         |
+| **build-server**      | Dockerized service to build and push apps to AWS S3                        |
+| **s3-reverse-proxy**  | Maps subdomains/domains to S3 and serves static content via proxy          |
+
+---
+
+## Tech Stack
+
+- **Node.js** – REST API server and custom reverse proxy logic  
+- **Docker** – Containerized build environments  
+- **AWS S3, ECS, ECR** – Cloud storage and container execution  
+- **Postman** – API testing and validation  
+
+---
+
+## Architecture Overview
+
+- Upload request hits `api-server`  
+- ECS task is triggered with `build-server` container  
+- The container clones the project, builds it, and pushes output to **AWS S3**  
+- `s3-reverse-proxy` handles routing of domains to the correct S3 bucket  
+
+---
+
+## 🌐 Connect with Me
+
+<div align="center">
+  Want to collaborate or have questions? Let's connect!
+  <br /><br />
+  <a href="https://www.linkedin.com/in/rajadigvijaysingh/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Raja_Digvijay_Singh-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+</div>
+
+---
